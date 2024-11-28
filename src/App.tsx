@@ -10,7 +10,7 @@ export default function Stopwatch() {
   const clearIntervalRef = () => {
     if (intervalRef.current !== null) {
       clearInterval(intervalRef.current);
-      intervalRef.current = null; // Reset to null
+      intervalRef.current = null;
     }
   };
 
