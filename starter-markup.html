@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Starter Markup</title>
+  </head>
+  <body class="bg-[#36BA98] flex items-center justify-center h-screen">
+    <main
+      class="flex flex-col gap-12 px-16 py-8 rounded-xl bg-gray-800 shadow-2xl"
+    >
+      <h1 class="text-3xl font-bold text-center text-white">Stopwatch</h1>
+      <p
+        class="text-6xl font-bold text-center text-amber-400"
+        aria-live="polite"
+      >
+        00:00.00
+      </p>
+      <div class="grid grid-cols-[repeat(3,110px)] gap-x-8">
+        <button
+          class="bg-[#36BA98] hover:bg-teal-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Start</button
+        ><button
+          disabled=""
+          class="bg-[#ef9144] hover:bg-amber-600 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          Stop</button
+        ><button
+          class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+        >
+          Reset
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
